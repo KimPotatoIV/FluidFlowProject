@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://27j0r1uh28u"]
+
+[ext_resource type="Script" uid="uid://di8wkc2xss532" path="res://scenes/hud/hud.gd" id="1_48c2t"]
+[ext_resource type="FontFile" uid="uid://cmojvujfj4ipy" path="res://fonts/PixelOperator8.ttf" id="2_cgeww"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_48c2t"]
+font = ExtResource("2_cgeww")
+font_color = Color(0, 0, 0, 1)
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_48c2t")
+
+[node name="FPSLabel" type="Label" parent="."]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 50.0
+offset_bottom = 31.0
+text = "FPS"
+label_settings = SubResource("LabelSettings_48c2t")

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcah2fpdoovky"]
+
+[ext_resource type="Script" uid="uid://dp6udxjxyvqh2" path="res://scenes/water_drop/water_drop.gd" id="1_6us4j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6us4j"]
+radius = 2.5
+
+[node name="WaterDrop" type="RigidBody2D"]
+contact_monitor = true
+script = ExtResource("1_6us4j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_6us4j")
